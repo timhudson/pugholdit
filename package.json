@@ -1,0 +1,22 @@
+{
+  "name": "pugholdit",
+  "version": "0.0.1",
+  "description": "A quick and pug filled image placeholder service",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/timhudson/pugholdit.git"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "gm": "~1.14.2",
+    "request": "~2.31.0",
+    "lodash": "~2.4.1"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Tim Hudson",
+    "email": "tim.hudson15@gmail.com"
+  }
+}
