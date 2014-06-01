@@ -9,7 +9,7 @@
   "scripts": {
     "start": "node server.js",
     "postinstall": "npm run create-readme && npm run build",
-    "convert-readme": "marked -i README.md -o static/README.html",
+    "convert-readme": "marked -i README.md -o browser/README.html",
     "build": "browserify browser/index.js | uglifyjs -mc > static/bundle.js",
     "watch": "watchify browser/index.js -o static/bundle.js --debug -v"
   },

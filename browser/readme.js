@@ -1,6 +1,6 @@
 /** @jsx React.DOM */
 var React = require('react')
-var readme = require('fs').readFileSync(__dirname + '/../static/README.html').toString()
+var readme = require('fs').readFileSync(__dirname + '/README.html').toString()
 
 module.exports = React.createClass({
   render: function() {
