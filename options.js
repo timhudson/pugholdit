@@ -1,5 +1,3 @@
-var _ = require('lodash')
-
 var formatRegex = /.(png|gif|jpg|jpeg)$/
   , sizeRegex = /^\/(\d+)x?(\d+)*/
 
