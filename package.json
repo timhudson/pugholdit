@@ -1,6 +1,6 @@
 {
   "name": "pugholdit",
-  "version": "0.0.1",
+  "version": "0.2.0",
   "description": "A quick and pug filled image placeholder service",
   "repository": {
     "type": "git",
