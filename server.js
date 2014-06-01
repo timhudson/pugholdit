@@ -2,7 +2,7 @@ var http = require('http')
   , async = require('async')
   , moment = require('moment')
   , request = require('request')
-  , gm = require('gm')
+  , gm = require('gm').subClass({imageMagick: true})
   , options = require('./options')
   , instagramer = require('./instagramer')
 
