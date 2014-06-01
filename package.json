@@ -31,7 +31,8 @@
     "ecstatic": "^0.5.3",
     "react": "^0.10.0",
     "marked": "^0.3.2",
-    "uglify-js": "^2.4.13"
+    "uglify-js": "^2.4.13",
+    "brfs": "^1.1.1"
   },
   "license": "MIT",
   "author": {
