@@ -6,6 +6,14 @@ var http = require('http')
   , options = require('./options')
   , instagramer = require('./instagramer')
 
+var staticd = require('ecstatic')({
+  root: __dirname + '/static',
+  showDir: false,
+  autoIndex: true,
+  defaultExt: 'html',
+  gzip: true
+})
+
 var placeholder = require('fs').readFileSync('./ben.jpg')
 
 var PORT = process.env.PORT || 1515
@@ -15,7 +23,7 @@ var server = http.createServer(function(req, res) {
     , url = instagramer.random()
     , source = url ? request(url) : placeholder
 
-  if (!opts.size) return res.end('pughold.it')
+  if (!opts.size) return staticd(req, res)
 
   gm(source)
     .resize(opts.size.width, opts.size.height, '^')

@@ -7,7 +7,15 @@
     "url": "git://github.com/timhudson/pugholdit.git"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "postinstall": "bin/postinstall.sh",
+    "watch": "watchify browser/index.js -o static/bundle.js --debug -v"
+  },
+  "browserify": {
+    "transform": [
+      "reactify",
+      "brfs"
+    ]
   },
   "dependencies": {
     "gm": "^1.16.0",
@@ -15,11 +23,19 @@
     "moment": "^2.6.0",
     "async": "^0.9.0",
     "request": "^2.36.0",
-    "lodash": "^2.4.1"
+    "lodash": "^2.4.1",
+    "reactify": "^0.13.1",
+    "browserify": "^4.1.6",
+    "ecstatic": "^0.5.3",
+    "react": "^0.10.0",
+    "marked": "^0.3.2"
   },
   "license": "MIT",
   "author": {
     "name": "Tim Hudson",
     "email": "tim.hudson15@gmail.com"
+  },
+  "devDependencies": {
+    "watchify": "^0.10.2"
   }
 }
