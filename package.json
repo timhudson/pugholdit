@@ -20,19 +20,20 @@
     ]
   },
   "dependencies": {
-    "gm": "^1.16.0",
-    "deck": "0.0.4",
-    "moment": "^2.6.0",
     "async": "^0.9.0",
-    "request": "^2.36.0",
-    "lodash": "^2.4.1",
-    "reactify": "^0.13.1",
+    "brfs": "^1.1.1",
     "browserify": "^4.1.6",
+    "deck": "0.0.4",
     "ecstatic": "^0.5.3",
-    "react": "^0.10.0",
+    "ga": "0.0.2",
+    "gm": "^1.16.0",
+    "lodash": "^2.4.1",
     "marked": "^0.3.2",
-    "uglify-js": "^2.4.13",
-    "brfs": "^1.1.1"
+    "moment": "^2.6.0",
+    "react": "^0.10.0",
+    "reactify": "^0.13.1",
+    "request": "^2.36.0",
+    "uglify-js": "^2.4.13"
   },
   "license": "MIT",
   "author": {

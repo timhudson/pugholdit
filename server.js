@@ -2,9 +2,12 @@ var http = require('http')
   , async = require('async')
   , moment = require('moment')
   , request = require('request')
+  , GA = require('ga')
   , gm = require('gm').subClass({imageMagick: true})
   , options = require('./options')
   , instagramer = require('./instagramer')
+
+var ga = new GA(process.env.GA_TRACKING_CODE, process.env.GA_HOST)
 
 var staticd = require('ecstatic')({
   root: __dirname + '/static',
@@ -32,6 +35,8 @@ var server = http.createServer(function(req, res) {
     .setFormat(opts.format)
     .stream()
     .pipe(res)
+
+  ga.trackPage(req.url.replace(/\?.+/, ''))
 })
 
 function populate(callback) {
