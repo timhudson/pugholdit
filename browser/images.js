@@ -1,6 +1,6 @@
 /** @jsx React.DOM */
 var React = require('react')
-var Image = require('./components/image')
+var Image = require('react-image-component')
 var crypto = require('crypto')
 
 module.exports = React.createClass({
@@ -26,7 +26,7 @@ module.exports = React.createClass({
     var images = this.state.images.map(function(image) {
       return (
         <div className="image-container">
-          <Image src={image} aspectRatio={self.state.aspectRatio} />
+          <Image src={image} aspectRatio={self.state.aspectRatio} transition="opacity 1.4s ease" />
         </div>
       )
     })
