@@ -1,24 +1,24 @@
-pughold.it
+hamsterhold.it
 =========
 
-A pug-filled image placeholder service. Modeled after [placehold.it](http://placehold.it)
+A hamster-filled image placeholder service. Modeled after [placehold.it](http://placehold.it)
 
 usage
 -----
 
 ```
-http://pugholdit.herokuapp.com/740
+http://hamsterholdit.herokuapp.com/740
 ```
 
 ```
-http://pugholdit.herokuapp.com/740x200
+http://hamsterholdit.herokuapp.com/740x200
 ```
 
 ```
-http://pugholdit.herokuapp.com/400x200.jpg
+http://hamsterholdit.herokuapp.com/400x200.jpg
 ```
 
 Thanks to
 ---------
 
-[placehold.it](http://placehold.it), [@pugs](http://instagram.com/pugs), [@pugstagram](http://instagram.com/pugstagram) and [@pugsofinstagram](http://instagram.com/pugsofinstagram)
+[placehold.it](http://placehold.it) and [@dwarfhamster_](http://instagram.com/dwarfhamster_)

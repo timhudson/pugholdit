@@ -58,7 +58,7 @@ img {
   content: '';
   position: absolute;
   top: 0; right: 0; bottom: 0; left: 0;
-  background-color: rgba(37, 199, 186, 0.8);
+  background-color: rgba(199, 154, 37, 0.8);
 }
 
 #readme {

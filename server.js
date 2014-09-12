@@ -17,7 +17,7 @@ var staticd = require('ecstatic')({
   gzip: true
 })
 
-var placeholder = require('fs').readFileSync('./ben.jpg')
+var placeholder = require('fs').readFileSync('./placeholder.jpg')
 
 var PORT = process.env.PORT || 1515
 
@@ -44,9 +44,7 @@ function populate(callback) {
 
   var start = Date.now()
   var users = [
-    '716811', // @pugs
-    '14834896', // @pugstagram
-    '10781872' // @pugsofinstagram
+    '327622380', // @dwarfhamster_
   ]
 
   async.each(users, instagramer.populate, function(err) {
@@ -62,5 +60,5 @@ populate()
 setInterval(populate, 5 * 60 * 1000)
 
 server.listen(PORT, function() {
-  console.log('pugholdit now listening on %d', PORT)
+  console.log('hamsterholdit now listening on %d', PORT)
 })

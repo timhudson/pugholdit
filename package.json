@@ -1,7 +1,7 @@
 {
-  "name": "pugholdit",
+  "name": "hamsterholdit",
   "version": "0.2.1",
-  "description": "A quick and pug filled image placeholder service",
+  "description": "A quick and hamster filled image placeholder service",
   "repository": {
     "type": "git",
     "url": "git://github.com/timhudson/pugholdit.git"
