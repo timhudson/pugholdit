@@ -3,7 +3,7 @@ var http = require('http')
   , moment = require('moment')
   , request = require('request')
   , GA = require('ga')
-  , gm = require('gm').subClass({imageMagick: true})
+  , gm = require('gm')
   , options = require('./options')
   , instagramer = require('./instagramer')
 
